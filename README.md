@@ -1,6 +1,6 @@
-#EffiPOI: A Product Quantization Framework Based on Knowledge Distillation for Efficient POI Recommendations
+# EffiPOI: A Product Quantization Framework Based on Knowledge Distillation for Efficient POI Recommendations
 
-#Requirements
+## Requirements
 ```bash
 recbole==1.0.1
 faiss-gpu==1.7.2
