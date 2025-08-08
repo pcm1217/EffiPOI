@@ -1,0 +1,19 @@
+data_path: '/data/'
+benchmark_filename: [train, valid, test]
+alias_of_item_id: [item_id_list]
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+# RATING_FIELD: stars
+TIME_FIELD: time_seq
+load_col:
+  inter: [user_id, item_id_list, item_id]
+train_neg_sample_args: ~
+unisrec_transform: ~
+dataset_class: TeaRecDataset
+
+
+topk: [1, 5, 10, 20]
+metrics: [HIT, NDCG]
+valid_metric: HIT@10
+eval_batch_size: 256
+stopping_step: 10
